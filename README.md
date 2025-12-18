@@ -66,66 +66,24 @@ The dataset includes clinical measurements from adult patients. Key features:
 ## Getting Started
 
 ### 1. Clone the repository
-```bash
+ 
 git clone https://github.com/rayen-feb/machine_learning_breast_cancer_detection-.git
 cd machine_learning_breast_cancer_detection
-### 2. install dependencies
 
----
-
-## Models Implemented
-
-1. **Softmax (Multinomial) Logistic Regression**
-   - Predicts class probabilities for binary classification.
-   - Interpretable and suitable for small datasets.
-
-2. **Support Vector Machines (SVM)**
-   - Linear SVM: assumes linearly separable features.
-   - Non-linear SVM: uses kernels (RBF/Polynomial) for complex patterns.
-
-3. **Multi-Layer Perceptron (MLP)**
-   - Feedforward neural network with multiple layers, ReLU activations, and dropout to prevent overfitting.
-
-4. **GRU + SVM Hybrid**
-   - GRU captures sequential embeddings from tabular features.
-   - SVM uses these embeddings for classification.
-
-5. **Neural Networks with L1/L2 Regularization**
-   - Reduces overfitting using weight penalties.
-   - Tested multiple architectures for optimal hyperparameters.
-
-6. **Nearest Neighbors (NN1 & NN2)**
-   - Euclidean and Manhattan distance metrics.
-   - Suitable for tabular datasets with structured features.
-
----
-
-## Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/rayen-feb/machine_learning_breast_cancer_detection-.git
-cd machine_learning_breast_cancer_detection
-### 2.install dependencies 
+### 2. Install dependencies
 pip install -r requirements.txt
-### 3.prepare data 
-place raw dataset files in data/raw/
+
+### 3.prepare data
+Place raw dataset files in data/raw/
 Preprocess data using notebooks or scripts/data_preprocessing.py
 Save processed data in data/processed/
 
-### 4.train models
-Use the notebooks to train and evaluate each model.
+### 4. Train Models
+Use the notebooks to train and evaluate each model
 Metrics computed: Accuracy, Precision, Recall, F1-score
 
-### 5.deploy(optionally)
-Run app.py to predict new patient data.
-Can be extended to a web interface or API.
-
-### results 
-Each notebook includes performance metrics for each model.
-
-Comparative evaluation highlights the best-performing model.
-
-Focus on accuracy and interpretability, important for clinical applications.
+### 5. Deploy (Optional)
+Run app.py to predict new patient data
+Can be extended to a web interface or API
 
 
