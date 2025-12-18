@@ -60,6 +60,29 @@ The dataset includes clinical measurements from adult patients. Key features:
 6. **Nearest Neighbors (NN1 & NN2)**
    - Euclidean and Manhattan distance metrics.
    - Suitable for tabular datasets with structured features.
+  
+   - ## 📊 Results and Visualizations
+
+This section shows key visual outputs from the models trained in this project.
+
+### 🧠 Model Performance Comparison
+
+Below are some plots comparing model accuracy, ROC curves, and confusion matrices:
+
+#### 🔹 Accuracy vs Loss
+
+![Accuracy vs Loss](results/plots/accuracy_vs_loss.png)
+
+#### 🔹 Confusion Matrix
+
+![Confusion Matrix](results/plots/confusion_matrix.png)
+
+#### 🔹 ROC Curves
+
+![ROC Curve](results/plots/roc_curve.png)
+
+These visualizations provide insight into model effectiveness and help compare performance across methods like Logistic Regression, SVM, and Neural Networks.
+
 
 ---
 
