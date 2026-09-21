@@ -1,8 +1,9 @@
+import os
+
 from flask import Flask, render_template, request
 import numpy as np
 import joblib
 from tensorflow.keras.models import load_model
-from tensorflow.keras import Model
 from PIL import Image
 
 app = Flask(__name__)
@@ -35,6 +36,10 @@ def predict_numeric(features):
 # ----------------------
 # Routes
 # ----------------------
+@app.route("/health")
+def health():
+    return {"status": "ok"}
+
 @app.route("/result", methods=["POST"])
 def result():
     method = request.form.get("method")
@@ -104,4 +109,8 @@ def index():
 # Run server
 # ----------------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000)),
+        debug=False,
+    )
